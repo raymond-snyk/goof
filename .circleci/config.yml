@@ -25,4 +25,4 @@ jobs: # a collection of steps
           command: snyk test --severity-threshold=medium --json-file-output=results.json || true
       - run: # run snyk monitor - run snyk monitor
           name: snyk monitor
-          command: snyk monitor --severity-threshold=medium --json-file-output=results.json || true
+          command: snyk monitor
